@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mingzat', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    font-size: 1.125rem;
+    background-color: brown;
+    color: wheat;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0px 2px 10px rgb(190, 181, 181);
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0px 24px;
+    padding: 0;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 12px 28px;
+}
+
+#navbar a:hover {
+    background-color: beige;
+    color: brown;
+}
+
+#welcome-section {
+    font-family: 'Arima', cursive;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35)), url("bg.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#welcome-section h1 {
+    color: white;
+    font-size: 3.25rem;
+    letter-spacing: 8px;
+}
+
+#welcome-section h4 {
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: oblique;
+    letter-spacing: 6px;
+}
+
+#projects {
+    background-color: bisque;
+}
+
+#projects h1 {
+    text-align: center;
+    padding-top: 36px;
+    color: brown;
+    font-size: 2.75rem;
+}
+
+#projects .project-grid {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#projects .project-tile {
+    display: block;
+    width: 25vw;
+    margin: 72px auto;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 25px;
+}
+
+#projects .project-image {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#projects .project-title {
+    display: block;
+    background-color: brown;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#projects a {
+    text-decoration: none;
+    color: wheat;
+}
+
+#projects a:hover {
+    border: none;
+    box-shadow: 5px 5px 25px gray;
+}
+
+#profile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #303841;
+    height: 100vh;
+    justify-content: center;
+}
+
+#profile-link .connect {
+    text-align: center;
+    padding: 16px;
+}
+
+#profile-link .connect h1 {
+    color: azure;
+    font-size: 3.25rem;
+    letter-spacing: 8px;
+}
+
+#profile-link .connect p {
+    color: azure;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: oblique;
+    letter-spacing: 6px;
+}
+
+#profile-link .media-link {
+    display: flex;
+    margin-top: 36px;
+}
+
+#profile-link a {
+    font-size: 2vh;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#profile-link img {
+    height: 3vh;
+}
+
+#profile-link a p {
+    margin-left: 10px;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px;
+    background: #303841;
+    border-top: 4px solid brown;
+    color: white;
+}
+
+footer p {
+    margin: 10px;
+}
